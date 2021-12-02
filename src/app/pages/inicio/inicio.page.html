@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bienvenido: {{ usuario }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+  <ion-item class="ion-margin-top">
+    <ion-img src="assets/img/good job tohru.gif"></ion-img>
+  </ion-item>
+
+  <!-- Seccion QR -->
+  <ion-row>
+    <ion-col size="3">
+      <ion-item class="ion-margin-top">
+        <ion-button expand="block" (click)="validarQR()">QR</ion-button>
+      </ion-item>
+    </ion-col>
+    <ion-col size="9">
+      <ion-item class="ion-margin-top">
+        <ion-label class="ion-margin-top">Estado: {{estado}}</ion-label>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-item class="ion-margin-top">
+    <ion-img src="assets/img/lastChance.gif"></ion-img>
+  </ion-item>
+  <ion-item class="ion-margin-top">
+    <p><a
+        href="https://www.youtube.com/watch?v=G4VAdWJXyFk&list=RDGMEMQ1dJ7wXfLlqCjwV0xfSNbAVMG4VAdWJXyFk&start_radio=1">Soy
+        un video en yutu</a></p>
+  </ion-item>
+  <ion-item class="ion-margin-top">
+    <ion-button class="ion-margin-top" expand=block (click)="formularioCambiarContrasena()">
+      Cambiar contraseña
+    </ion-button>
+  </ion-item>
+  <ion-item class="ion-margin-top">
+    <ion-button (click)="olvidarEstado()" class="ion-margin-top" expand=block>
+      Olvidar Sesion
+    </ion-button>
+  </ion-item>
+</ion-content>

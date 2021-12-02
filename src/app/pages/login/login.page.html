@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Ingresa o Registrate</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-paddign">
+  <ion-img src="assets/img/web_escudo.jpg"></ion-img>
+
+  <ion-item class="ion-margin-top">
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input [(ngModel)]="usuarioIngresado"></ion-input>
+  </ion-item>
+  <ion-item class="ion-margin-top">
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="contrasenaIngresada"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Recuerdame</ion-label>
+    <ion-checkbox class="ion-margin-top" [(ngModel)]="recordarSesion" position="floating"></ion-checkbox>
+  </ion-item>
+    
+  <!-- Boton para ingresar: valida credenciales y permite acceso. -->
+  <ion-button (click)="ingresar()" class="ion-margin-top" expand=block>
+    Ingresar
+  </ion-button>
+
+  <!-- Boton para registrar un usuario: completa un formulario y guarda en la BD -->
+  <ion-button (click)="formulario()" class="ion-margin-top" expand=block>
+    Registrarse
+  </ion-button>
+
+</ion-content>
